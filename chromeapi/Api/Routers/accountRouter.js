@@ -6,4 +6,4 @@ const router = express.Router();
 router.get("/allaccount", authController.allAccount);
 router.post("/createaccount", authController.createAccount);
 
-module.export = router;
+module.exports = router;
