@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalletX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card2">
+        <!-- header -->
+        <div class="header">
+          <div class="header_log">
+            <img src="./assets/theblockchaincoders.png" alt="logo">
+          </div>
+
+          <div class="header_network" id="header_network">
+            <p>
+              <svg></svg>
+              <span id="selected_network">Polygon Mumbai</span>
+              <svg></svg>
+            </p>
+          </div>
+        </div>
+        <!-- end of header -->
+
+        <!-- network section -->
+
+        <div id="network" class="network">
+
+          <div class="network_title">
+            <p>Networks</p>
+          </div>
+
+          <div id="network_item" class="network_list">
+            <p class="network_item">
+              <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                ></path>
+              </svg>
+              <span>Ethereum Mainnet</span>
+            </p>
+            <p class="network_item">
+              <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                ></path>
+              </svg>
+              <span>Polygon Mainnet</span>
+            </p>
+            <p class="network_item">
+              <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                ></path>
+              </svg>
+              <span>Polygon Mumbai</span>
+            </p>
+            <p class="network_item">
+              <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                ></path>
+              </svg>
+              <span>Goerli testnet</span>
+            </p>
+            <p class="network_item">
+              <svg
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="input-icon"
+              >
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                ></path>
+              </svg>
+              <span>Sepolia testnet</span>
+            </p>
+          </div>
+
+          <button id="add_network" class="button3 addStyle">Add network</button>
+        </div>
+        <!-- end of network section -->
+
+        <!-- Home screen -->
+        <div id="createAccount" class="home_screen_signup">
+          <img 
+            src="./assets/theblockchaincoders.png" 
+            alt="logo"
+            class="home_screen_img"
+          />
+          <h1 class="home_title">WalletX</h1>
+          <p>
+            Welcome to next generation crypto wallet exxchange,
+            the most complete
+            dapp soultion
+          </p>
+
+          <button id="openCreate" class="button3 connectWallet">
+            Create Account
+          </button>
+
+          <p>
+            Login in your account
+            <strong class="home_title" id="loginAccount"> LOGIN</strong>
+          </p>
+        </div>
+        <!-- end of Home screen -->
+
+        <!-- create pop up-->
+        <div id="create_popup" class="create_popup">
+          <div class="form">
+            <p id="heading">Create Account</p>
+            <div id="field">
+              <div class="field">
+                <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+
+                <input 
+                  type="text" 
+                  class="input-field" 
+                  placeholder="name"
+                  id="sign_up_name"
+                />
+              </div>
+              <p class="space"></p>
+              <div class="field">
+                <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+
+                <input 
+                  type="text" 
+                  class="input-field" 
+                  placeholder="email"
+                  id="sign_up_email"
+                />
+              </div>
+              <p class="space"></p>
+              <div class="field">
+                <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+
+                <input 
+                  type="text" 
+                  class="input-field" 
+                  placeholder="password"
+                  id="sign_up_password"
+                />
+              </div>
+              <p class="space"></p>
+              <div class="field">
+                <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+
+                <input 
+                  type="text" 
+                  class="input-field" 
+                  placeholder="passwordConfirm"
+                  id="sign_up_passwordConfirm"
+                />
+              </div>
+            </div>
+
+            <div id="center" class="center">
+              <div class="loader">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                <div class="bar7"></div>
+                <div class="bar8"></div>
+                <div class="bar9"></div>
+                <div class="bar10"></div>
+                <div class="bar11"></div>
+                <div class="bar12"></div>
+              </div>
+            </div>
+
+            <div id="accountdata" class="accountData">
+              <h3 id="accountInfo">Address</h3>
+              <p id="createAddress">Address:</p>
+              <h3>Private Key</h3>
+              <p id="createdPrivateKey">Private Key:</p>
+              <h3>Mnemonic</h3>
+              <p id="createMnemonic">Mnemonic</p>
+            </div>
+
+            <button id="sign_up" class="button3 connectWallet">Sign Up</button>
+
+            <button id="goHomePage" class="button3 connectWallet">Go back</button>
+          </div>
+        </div>
+        <!-- end of create pop up-->
+
+        <!--Login components-->
+        <div id="LoginUser" class="home_screen_login">
+          <img 
+            src="./assets/theblockchaincoders.png" 
+            alt=""
+            class="home_screen_img"
+          />
+
+          <h1 class="home_title">WalletX</h1>
+          <p>Welcome back! The decentralized web Dapp</p>
+          <div class="form" id="login_form">
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text" 
+                id="login_email"
+                class="input-field"
+                placeholder="email"
+              />
+            </div>
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text" 
+                id="login_password"
+                class="input-field"
+                placeholder="password"
+              />
+            </div>
+          </div>
+
+          <button id="login_up" class="button3 connectWallet">Login</button>
+          <p>Login to your account <strong class="home_title" id="accountCreate">Create Account</strong></p>
+        </div>
+        <!--end of Login components-->
+
+        <!-- transfer component-->
+        <div class="transfer_form" id="transfer_form">
+          <div class="form">
+            <img 
+              src="./assets/arrowleft.png" 
+              alt=""
+              class="goBack"
+              id="goBack"
+            />
+
+            <p id="heading">Transfer Funds</p>
+
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text"
+                class="input-field"
+                placeholder="amount"
+                id="amount"
+              />
+            </div>
+            <p class="space"></p>
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text"
+                class="input-field"
+                placeholder="Transfer Address"
+                id="address"
+              />
+            </div>
+
+            <div id="transfer_center" class="center">
+              <div class="loader">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                <div class="bar7"></div>
+                <div class="bar8"></div>
+                <div class="bar9"></div>
+                <div class="bar10"></div>
+                <div class="bar11"></div>
+                <div class="bar12"></div>
+              </div>
+            </div>
+
+            <small>
+              <a href="" id="link" target="_blank">Check Your Transaction</a>
+            </small>
+
+            <button id="transferfund" class="button3 connectWallet">Transfer</button>
+          </div>
+        </div>
+        <!-- end of transfer component-->
+
+        <!-- import component -->
+        <div id="import_token" class="import_token">
+          <div class="form">
+            <img 
+              src="./assets/arrowleft.png" 
+              id="goBack_import" 
+              alt=""
+            />
+            <p id="heading">Import Token</p>
+
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text" 
+                class="input-field"
+                placeholder="token address"
+                id="token_address"
+              />
+            </div>
+            <p class="space"></p>
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text" 
+                class="input-field"
+                placeholder="token name"
+                id="token_name"
+              />
+            </div>
+            <p class="space"></p>
+            <div class="field">
+              <svg></svg>
+              <input 
+                type="text" 
+                class="input-field"
+                placeholder="token symbol"
+                id="token_symbol"
+              />
+            </div>
+
+            <button id="add_new_token" class="button3 connectWallet">Import</button>
+
+            <!-- <div class="accountList" id="accountList"></div> -->
+          </div> 
+        </div>
+        <!-- end of import component -->
+
+        <!-- import account -->
+
+        <!-- import account not recorded-->
+        <div id="import_account" class="import_account">
+          <div class="form">
+            <img
+              id="close_import_account"
+              class="goBack" 
+              src="./assets/arrowleft.png" 
+              alt=""
+            />
+            <p id="heading">Import Account</p>
+            <div class="field">
+              <svg></svg>
+              <textarea 
+                type="text"
+                class="input-field"
+                placeholder="private key"
+                name="" 
+                id="add_account_private_key" 
+                cols="30" 
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button id="add_New_Account" class="button3 connectWallet">Import</button>
+            <div class="accountList" id="accountList">
+              <!--<div class="lists">
+                <p>1</p>
+                <p>shbhbsvboASXBNSX...</p>
+              </div>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="home" id="home">
+          <div class="home_header">
+            <div>
+              <p id="userAddress">connecting...</p>
+            </div>
+            <div>
+              <p>Active</p>
+            </div>
+          </div>
+
+          <img 
+            src="./assets/theblockchaincoders.png" 
+            class="home_header_img"
+            alt=""
+          />
+
+          <h1 id="accountBalance">0.00 MATIC</h1>
+
+          <div class="home_features">
+            <div class="home_features_item">
+              <img 
+                src="./assets/buy.png" 
+                class="home_features_img"
+                alt=""
+              />
+              <p class="text">Buy</p>
+            </div>
+            <div class="home_features_item" id="open_Transfer">
+              <img 
+                src="./assets/send.png" 
+                class="home_features_img"
+                alt=""
+              />
+              <p class="text">Send</p>
+            </div>
+            <div class="home_features_item" id="openAccountImport">
+              <img 
+                src="./assets/user.png" 
+                class="home_features_img"
+                alt=""
+              />
+              <p class="text">Account</p>
+            </div>
+            <div class="home_features_item" id="open_Import">
+              <img 
+                src="./assets/import.png" 
+                class="home_features_img"
+                alt=""
+              />
+              <p class="text">Import</p>
+            </div>
+          </div>
+
+          <div class="home_tabs">
+            <p id="open_assets">Assets</p>
+            <p id="logout">Logout</p>
+            <p id="open_acctivity">Activity</p>
+          </div>
+          <p class="space"></p>
+          <p class="space"></p>
+
+          <!--assets-->
+          <div id="assets" class="assets"></div>
+
+          <!-- activity -->
+          <div id="activity" class="activity">
+            <div class="assets_item">
+              <img 
+                src="./assets/theblockchaincoders.png" 
+                class="assets_item_img"
+                alt=""
+              />
+
+              <span>33kabccoouabc188212828....</span>
+              <span>0.45 MATIC</span>
+            </div>
+            <div class="assets_item">
+              <img 
+                src="./assets/theblockchaincoders.png" 
+                class="assets_item_img"
+                alt=""
+              />
+
+              <span>33kabccoouabc188212828....</span>
+              <span>0.45 MATIC</span>
+            </div>
+          </div>
+        </div>
+        <!-- end of import account -->
+        </div>
+      </div>
+
+      <script 
+        src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+      ></script>
+      <!---<script src="ethers.js"></script> -->
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
