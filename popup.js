@@ -61,7 +61,7 @@ function handler(){
     const amount = document.getElementById("amount").value;
     const address = document.getElementById("address").value;
 
-    const private_key = "b998374034b7f7b2130c326206e4abaa1995a180ba07f167d2dcd2647900a168"
+    const private_key = ""
 
     const testAccount = "0x1114a1b2f10e5032a41EbE8F3E926182B0A7908D";
 
